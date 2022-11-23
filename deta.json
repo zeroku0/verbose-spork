@@ -1,0 +1,9 @@
+{
+    "env": [
+        {
+            "key": "DATABASE_URL",
+            "description": "A valid postgres database url.",
+            "required": true 
+        }
+    ]
+}

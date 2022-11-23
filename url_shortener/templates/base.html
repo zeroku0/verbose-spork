@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>CUTR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+<link rel="manifest" href="/static/site.webmanifest">
+<style>
+    .vertical-center {
+        width: 92%;
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+</style>
+
+<body class="w3-sand">
+    <div class="vertical-center">
+        <div class="w3-panel w3-round w3-padding-32 w3-border w3-border-pink" style="background-color: #f8f9fa;">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>

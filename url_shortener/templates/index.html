@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>URL Shortener</h1>
+<form method="post">
+    {{form.hidden_tag()}}
+    <p>
+        {{form.url.label}}
+        {{form.url(class="w3-input w3-border w3-border-teal")}}
+    </p>
+    {{form.submit(class="w3-btn w3-round w3-large w3-teal")}}
+</form>
+{% endblock %}

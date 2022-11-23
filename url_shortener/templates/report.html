@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Shortend URL</h1>
+<form method="post">
+    <p>
+        {{form.surl(value=res, readonly=True, class="w3-input w3-border w3-border-teal")}}
+    </p>
+    <a href="{{url_for('index')}}">{{form.submit(class="w3-btn w3-round w3-large w3-teal")}}</a>
+</form>
+{% endblock %}
